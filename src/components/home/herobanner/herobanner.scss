@@ -1,0 +1,251 @@
+.herobanner {
+
+
+    .banner-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .slider-image {
+            max-height: 100%;
+            max-width: 100%;
+            background-size: cover;
+        }
+
+        .slider-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .slider-content-left {
+                padding: 0 100px 0 200px;
+
+                .banner-sub-heading {
+                    font-family: "Playfair Display", serif;
+                    font-size: 25px;
+                    font-weight: 500;
+                    padding-bottom: 20px;
+                }
+
+                .banner-heading {
+                    font-size: 58px;
+                    color: #ff9939;
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                }
+
+                span {
+                    font-family: "Playfair Display", serif;
+                    font-size: 30px;
+                    font-weight: 500;
+                    display: block;
+                    padding-bottom: 20px;
+                }
+
+                button {
+                    background-color: #D08126;
+                    border: none;
+                    font-size: 16px;
+                    color: #fff;
+                    padding: 12px;
+                    border-radius: 20px;
+                    width: 140px;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #000;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+
+            .slider-content-middle {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                .banner-heading {
+                    font-size: 58px;
+                    color: #000;
+                    padding-bottom: 20px;
+                    font-weight: 400;
+                }
+
+                .banner-sub-heading {
+                    font-family: "Playfair Display", serif;
+                    font-size: 25px;
+                    font-weight: 500;
+                    padding-bottom: 20px;
+                }
+
+                .bannerheading {
+                    color: #ff7777;
+                    font-size: 58px;
+                    padding-bottom: 20px;
+                    font-weight: 400;
+                    letter-spacing: -2px;
+                }
+
+                span {
+                    font-family: "Playfair Display", serif;
+                    font-size: 30px;
+                    font-weight: 500;
+                    display: block;
+                    padding-bottom: 20px;
+                }
+
+                button {
+                    background-color: #f031c0;
+                    border: none;
+                    font-size: 16px;
+                    color: #fff;
+                    padding: 12px;
+                    border-radius: 20px;
+                    width: 140px;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &.change-color {
+                        background-color: #fff;
+                        color: #000;
+
+                        &:hover {
+                            color: #e9e9e9;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #000;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+
+            .slider-content-rigth {
+                padding: 0 100px 0 0;
+                width: 100%;
+                display: grid;
+                justify-content: right;
+                align-items: center;
+
+                .banner-sub-heading {
+                    font-family: "Playfair Display", serif;
+                    font-size: 25px;
+                    font-weight: 500;
+                    padding-bottom: 20px;
+                }
+
+                .banner-heading {
+                    font-size: 58px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                }
+
+                span {
+                    font-family: "Playfair Display", serif;
+                    font-size: 30px;
+                    font-weight: 500;
+                    display: block;
+                    padding-bottom: 20px;
+                }
+
+                button {
+                    background-color: #474747;
+                    border: none;
+                    font-size: 16px;
+                    color: #fff;
+                    padding: 12px;
+                    border-radius: 20px;
+                    width: 140px;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #ff6c3b;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    
+
+    .nextArrow {
+        position: absolute;
+        top: 40%;
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+
+
+        &::after {
+            content: '';
+            background-image: url(../../../assets/icons/arrow-icon.png);
+            position: absolute;
+            min-width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            left: -2px;
+        }
+
+        &:hover {
+            background-color: #df6f7c;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    .prevArrow {
+        position: absolute;
+        bottom: 50%;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+
+        &::after {
+            content: '';
+            background-image: url(../../../assets/icons/arrow-icon.png);
+            transform: rotate(180deg);
+            position: absolute;
+            min-width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            right: -2px;
+        }
+
+        &:hover {
+            background-color: #df6f7c;
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
