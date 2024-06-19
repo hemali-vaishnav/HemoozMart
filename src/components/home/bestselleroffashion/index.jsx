@@ -237,7 +237,6 @@ export default function Bestselleroffashion() {
           </div>
         </div>
       </div>
-      <h1>divang bhai</h1>
     </>
   )
 }
