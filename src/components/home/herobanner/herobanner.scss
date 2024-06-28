@@ -29,6 +29,10 @@
                     font-size: 25px;
                     font-weight: 500;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 17px;
+                    }
                 }
 
                 .banner-heading {
@@ -36,6 +40,11 @@
                     color: #ff9939;
                     font-weight: 400;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                        font-weight: 500;
+                    }
                 }
 
                 span {
@@ -44,6 +53,10 @@
                     font-weight: 500;
                     display: block;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
                 }
 
                 button {
@@ -75,6 +88,11 @@
                     color: #000;
                     padding-bottom: 20px;
                     font-weight: 400;
+
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                        font-weight: 500;
+                    }
                 }
 
                 .banner-sub-heading {
@@ -82,6 +100,10 @@
                     font-size: 25px;
                     font-weight: 500;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 17px;
+                    }
                 }
 
                 .bannerheading {
@@ -90,6 +112,10 @@
                     padding-bottom: 20px;
                     font-weight: 400;
                     letter-spacing: -2px;
+
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                    }
                 }
 
                 span {
@@ -98,6 +124,10 @@
                     font-weight: 500;
                     display: block;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
                 }
 
                 button {
@@ -139,6 +169,10 @@
                     font-size: 25px;
                     font-weight: 500;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 17px;
+                    }
                 }
 
                 .banner-heading {
@@ -146,6 +180,10 @@
                     color: #ffffff;
                     font-weight: 400;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                    }
                 }
 
                 span {
@@ -154,6 +192,10 @@
                     font-weight: 500;
                     display: block;
                     padding-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
                 }
 
                 button {
@@ -187,7 +229,7 @@
         display: none !important;
     }
 
-    
+
 
     .nextArrow {
         position: absolute;

@@ -5,17 +5,35 @@
     gap: 100px;
     padding: 10px 0 20px 0;
 
+    @media (max-width: 768px) {
+        gap:20px;
+    }
+
     .feature {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
 
+        @media (max-width: 768px) {
+            gap: 10px;
+
+        }
+
         .feature-icon {
             width: 60px;
 
+            @media (max-width: 768px) {
+                width: 50px;
+
+            }
+
             .delivery {
                 font-size: 60px;
+
+                @media (max-width: 768px) {
+                    font-size: 50px;
+                }
             }
 
         }
@@ -24,7 +42,7 @@
             width: 35px !important;
         }
 
-        .change-icon-width{
+        .change-icon-width {
             width: 20px !important;
             height: 32px;
         }
@@ -33,11 +51,19 @@
             h4 {
                 font-size: 18px;
                 color: #3a3a3a;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
 
             p {
                 font-size: 16px;
                 font-weight: 500;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
         }
     }

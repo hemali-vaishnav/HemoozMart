@@ -38,7 +38,7 @@ export default function Header() {
                                 <div className="cart-count">
                                     <span>{cartCount}</span>
                                 </div>
-                            </Link>        
+                            </Link>
                             <div className="icons favorite-icon">
                                 <Link to={"/favourite"}>
                                     <MdFavoriteBorder />
@@ -56,6 +56,15 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
+                <div className="search-bar-for-mobile">
+                    <div id="search-bar">
+                        <div className="search-icon">
+                            <IoSearchOutline className="submit-search-icon" />
+                        </div>
+                        <input type="text" placeholder="Search HemoozMart" className="search-input" />
+                    </div>
+                </div>
+
                 <div className="bottom-header">
                     <div className="nav-bar">
                         <nav>

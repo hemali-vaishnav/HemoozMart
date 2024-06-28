@@ -38,7 +38,7 @@ export default function Herobanner() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
