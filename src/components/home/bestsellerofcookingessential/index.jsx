@@ -228,41 +228,43 @@ export default function Bestsellerofcookingessential() {
 
     return (
         <>
-            <div className="bestseller-of-cooking container">
-                <div className='bestseller-heading'>
-                    <h2>Bestsellers of Cooking Essential</h2>
-                </div>
-                <div className="cooking-bestseller-cards">
-                    <div className="cards-slider">
-                        <Slider {...settings}>
-                            {
-                                cookingEssentialCards.map((card) => (
-                                    <div className="card" key={card.id}>
-                                        <div className="flex-item">
-                                            <div className='card-image'>
-                                                <img src={card.image} alt={card.name} />
+            <div className="bestseller-of-cooking ">
+                <div className="container">
+                    <div className='bestseller-heading'>
+                        <h2>Bestsellers of Cooking Essential</h2>
+                    </div>
+                    <div className="cooking-bestseller-cards">
+                        <div className="cards-slider">
+                            <Slider {...settings}>
+                                {
+                                    cookingEssentialCards.map((card) => (
+                                        <div className="card" key={card.id}>
+                                            <div className="flex-item">
+                                                <div className='card-image'>
+                                                    <img src={card.image} alt={card.name} />
+                                                </div>
+                                                <div onClick={() => favcarts(card)} className='fav-icon'>
+                                                    <FiHeart className={`icon ${favItems.some(item => item.id === card.id) ? 'filled' : ''}`} />
+
+                                                </div>
                                             </div>
-                                            <div onClick={() => favcarts(card)} className='fav-icon'>
-                                                <FiHeart className={`icon ${favItems.some(item => item.id === card.id) ? 'filled' : ''}`} />
+                                            <div className="card-content">
+                                                <h4>{card.name}</h4>
+                                                <p className='price'>{card.price}</p>
+                                                <button onClick={() => addToCart(card)} className="cart-button">
+                                                    <span className='add-to-cart'>ADD TO CART</span>
+                                                    <span class="added">Added</span>
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <i class="fas fa-box"></i>
+                                                </button>
+
 
                                             </div>
                                         </div>
-                                        <div className="card-content">
-                                            <h4>{card.name}</h4>
-                                            <p className='price'>{card.price}</p>
-                                            <button onClick={() => addToCart(card)} className="cart-button">
-                                                <span className='add-to-cart'>ADD TO CART</span>
-                                                <span class="added">Added</span>
-                                                <i class="fas fa-shopping-cart"></i>
-                                                <i class="fas fa-box"></i>
-                                            </button>
-
-
-                                        </div>
-                                    </div>
-                                ))
-                            }
-                        </Slider>
+                                    ))
+                                }
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </div>

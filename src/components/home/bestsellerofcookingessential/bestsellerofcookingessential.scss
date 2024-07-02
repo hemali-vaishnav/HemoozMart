@@ -4,6 +4,7 @@
     .bestseller-heading {
         padding: 10px 0 15px 15px;
         font-size: 18px;
+
     }
 
     .cooking-bestseller-cards {
@@ -35,7 +36,7 @@
                         width: 150px;
                     }
 
-                    
+
                 }
 
                 .card-content {
@@ -74,7 +75,7 @@
                             border: 1px solid #576ea1;
                         }
 
-                    
+
                         .fa-shopping-cart {
                             position: absolute;
                             z-index: 2;
@@ -211,6 +212,10 @@
                 background-size: cover;
                 top: 5px;
                 right: -1200px;
+
+                @media (max-width: 768px) {
+                    right: -680px;
+                }
             }
         }
 

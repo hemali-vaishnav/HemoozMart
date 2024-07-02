@@ -3,9 +3,14 @@
 .trending-brands {
     padding: 40px 0;
 
+
     .section-heading {
         h2 {
             font-size: 30px;
+
+            @media (max-width: 768px) {
+                font-size: 26px;
+            }
         }
     }
 

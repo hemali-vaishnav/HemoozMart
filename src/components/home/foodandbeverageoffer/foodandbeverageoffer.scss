@@ -6,6 +6,10 @@
         h2 {
             font-size: 30px;
             padding: 0 0 16px 12px;
+
+            @media (max-width: 768px) {
+                font-size: 26px;
+            }
         }
     }
 

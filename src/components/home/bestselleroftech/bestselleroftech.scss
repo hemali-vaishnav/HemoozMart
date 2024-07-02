@@ -6,7 +6,7 @@
         font-size: 18px;
     }
 
-    .tech-bestseller-cards{
+    .tech-bestseller-cards {
 
         .cards-slider {
             position: relative;
@@ -35,7 +35,7 @@
                         width: 150px;
                     }
 
-                    
+
                 }
 
                 .card-content {
@@ -210,6 +210,10 @@
                 background-size: cover;
                 top: 5px;
                 right: -1200px;
+
+                @media (max-width: 768px) {
+                    right: -680px;
+                }
             }
         }
 

@@ -39,7 +39,7 @@ export default function Featuresection() {
                 </div>
                 <div className="feature">
                     <div className="feature-icon change-icon-width">
-                        <img src={featureicon3} alt="icon"  />
+                        <img src={featureicon3} alt="icon" />
                     </div>
                     <div className="feature-content">
                         <h4>Quick Payment</h4>

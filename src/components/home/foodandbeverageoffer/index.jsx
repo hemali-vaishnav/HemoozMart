@@ -8,7 +8,7 @@ import foodandbeverageimage2 from '../../../assets/images/food-offer (2).webp';
 import foodandbeverageimage3 from '../../../assets/images/food-offer (3).webp';
 import foodandbeverageimage4 from '../../../assets/images/food-offer (4).webp';
 
-const foodandBeverageImage = [ 
+const foodandBeverageImage = [
     {
         image: foodandbeverageimage1
     },
@@ -36,23 +36,24 @@ export default function Foodandbeverageoffer() {
     };
     return (
         <>
-            <div className="foodandbeverage-section container">
-                <div className="foodandbeverage-heading">
-                    <h2>Food & Beverages</h2>
-                </div>
+            <div className="foodandbeverage-section ">
+                <div className="container">
+                    <div className="foodandbeverage-heading">
+                        <h2>Food & Beverages</h2>
+                    </div>
 
-                <div className="foodandbeverage-slider">
-                    <Slider {...settings}>
-                        {
-                            foodandBeverageImage.map((image) => (
-                                <div className='foodandbeverage-image'>
-                                    <img src={image.image} alt='image' />
-                                </div>
-                            ))
-                        }
-                    </Slider>
+                    <div className="foodandbeverage-slider">
+                        <Slider {...settings}>
+                            {
+                                foodandBeverageImage.map((image) => (
+                                    <div className='foodandbeverage-image'>
+                                        <img src={image.image} alt='image' />
+                                    </div>
+                                ))
+                            }
+                        </Slider>
+                    </div>
                 </div>
-
             </div>
         </>
     )

@@ -37,23 +37,24 @@ export default function Electronicsoffer() {
   };
   return (
     <>
-      <div className="electronics-section container">
-        <div className="electronics-heading">
-          <h2>Electronics & Appliances</h2>
-        </div>
+      <div className="electronics-section ">
+        <div className="container">
+          <div className="electronics-heading">
+            <h2>Electronics & Appliances</h2>
+          </div>
 
-        <div className="electronicsoffer-slider">
-          <Slider {...settings}>
-            {
-              electronicofferimage.map((image) => (
-                <div className='electronicsoffer-image'>
-                  <img src={image.image} alt='image' />
-                </div>
-              ))
-            }
-          </Slider>
+          <div className="electronicsoffer-slider">
+            <Slider {...settings}>
+              {
+                electronicofferimage.map((image) => (
+                  <div className='electronicsoffer-image'>
+                    <img src={image.image} alt='image' />
+                  </div>
+                ))
+              }
+            </Slider>
+          </div>
         </div>
-
       </div>
     </>
   )

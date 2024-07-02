@@ -39,22 +39,23 @@ export default function Beautyoffer() {
     };
     return (
         <>
-            <div className="beautyoffer-section container">
-                <div className="beautyoffer-heading">
-                    <h2>Makeup & Beauty Essentials</h2>
+            <div className="beautyoffer-section ">
+                <div className="container">
+                    <div className="beautyoffer-heading">
+                        <h2>Makeup & Beauty Essentials</h2>
+                    </div>
+                    <div className="beautyoffer-slider">
+                        <Slider {...settings}>
+                            {
+                                beautyofferimage.map((image) => (
+                                    <div className='beautyoffer-image'>
+                                        <img src={image.image} alt='image' />
+                                    </div>
+                                ))
+                            }
+                        </Slider>
+                    </div>
                 </div>
-                <div className="beautyoffer-slider">
-                    <Slider {...settings}>
-                        {
-                            beautyofferimage.map((image) => (
-                                <div className='beautyoffer-image'>
-                                    <img src={image.image} alt='image' />
-                                </div>
-                            ))
-                        }
-                    </Slider>
-                </div>
-
             </div>
         </>
     )

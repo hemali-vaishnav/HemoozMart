@@ -44,24 +44,26 @@ export default function Cookingessentialoffer() {
 
     return (
         <>
-            <div className="cookingessential-section container">
-                <div className="cookingessential-heading">
-                    <h2>Cooking Essentials</h2>
-                </div>
-                <div className="cookingessential-slider">
-                    <Slider {...settings}>
-                        {
-                            cookingEssentialBannerImage.map((image) => (
-                                <div className='cookingessential-image'>
-                                    <img src={image.image} alt='image' />
-                                </div>
-                            ))
-                        }
-                    </Slider>
+            <div className="cookingessential-section ">
+                <div className="container">
+                    <div className="cookingessential-heading">
+                        <h2>Cooking Essentials</h2>
+                    </div>
+                    <div className="cookingessential-slider">
+                        <Slider {...settings}>
+                            {
+                                cookingEssentialBannerImage.map((image) => (
+                                    <div className='cookingessential-image'>
+                                        <img src={image.image} alt='image' />
+                                    </div>
+                                ))
+                            }
+                        </Slider>
+                    </div>
                 </div>
             </div >
 
-            
+
         </>
     )
 }

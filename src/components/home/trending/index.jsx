@@ -13,28 +13,30 @@ export default function Trending() {
   return (
     <>
 
-      <div className="trending-brands container">
-        <div className="section-heading">
-          <h2>Trending Brands</h2>
-        </div>
-        <div className="trending-brand-images">
-          <div className="brand-image">
-            <img src={trendingbrandimage1} alt="image" />
+      <div className="trending-brands">
+        <div className='container'>
+          <div className="section-heading">
+            <h2>Trending Brands</h2>
           </div>
-          <div className="brand-image">
-            <img src={trendingbrandimage6} alt="image" />
-          </div>
-          <div className="brand-image">
-            <img src={trendingbrandimage3} alt="image" />
-          </div>
-          <div className="brand-image">
-            <img src={trendingbrandimage4} alt="image" />
-          </div>
-          <div className="brand-image">
-            <img src={trendingbrandimage2} alt="image" />
-          </div>
-          <div className="brand-image">
-            <img src={trendingbrandimage5} alt="image" />
+          <div className="trending-brand-images">
+            <div className="brand-image">
+              <img src={trendingbrandimage1} alt="image" />
+            </div>
+            <div className="brand-image">
+              <img src={trendingbrandimage6} alt="image" />
+            </div>
+            <div className="brand-image">
+              <img src={trendingbrandimage3} alt="image" />
+            </div>
+            <div className="brand-image">
+              <img src={trendingbrandimage4} alt="image" />
+            </div>
+            <div className="brand-image">
+              <img src={trendingbrandimage2} alt="image" />
+            </div>
+            <div className="brand-image">
+              <img src={trendingbrandimage5} alt="image" />
+            </div>
           </div>
         </div>
       </div>

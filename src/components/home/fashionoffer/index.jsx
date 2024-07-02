@@ -42,24 +42,25 @@ export default function Fashionoffer() {
 
     return (
         <>
-            <div className="fashion-section container">
-                <div className="fashion-heading">
-                    <h2>Explore Top Fashion </h2>
+            <div className="fashion-section ">
+                <div className="container">
+                    <div className="fashion-heading">
+                        <h2>Explore Top Fashion </h2>
+                    </div>
+
+                    <div className="fashion-slider">
+                        <Slider {...settings} beforeChange={handleBeforeChange}>
+                            {
+                                fashionOfferImage.map((image, index) => (
+                                    <div key={index} className='fashion-image'>
+                                        <img src={image} alt={`slide-${index}`} />
+                                    </div>
+                                ))
+                            }
+
+                        </Slider>
+                    </div>
                 </div>
-
-                <div className="fashion-slider">
-                    <Slider {...settings} beforeChange={handleBeforeChange}>
-                        {
-                            fashionOfferImage.map((image, index) => (
-                                <div key={index} className='fashion-image'>
-                                    <img src={image} alt={`slide-${index}`} />
-                                </div>
-                            ))
-                        }
-
-                    </Slider>
-                </div>
-
             </div>
         </>
     );
