@@ -5,6 +5,10 @@
         padding: 10px 0 15px 15px;
         font-size: 18px;
 
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
     }
 
     .cooking-bestseller-cards {

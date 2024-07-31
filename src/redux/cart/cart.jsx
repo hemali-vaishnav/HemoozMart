@@ -30,7 +30,7 @@ export const cartSlice = createSlice({
             if (removedItemIndex !== -1) {
                 state.items.splice(removedItemIndex, 1);
                 state.count -= 1;
-                localStorage.setItem("count", state.count.toString());
+                localStorage.setItem("count", state.count.toString()); 
                 localStorage.setItem("items", JSON.stringify(state.items));
             }
         },

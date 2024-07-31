@@ -48,7 +48,7 @@ export default function Header() {
                                 </Link>
                             </div>
                             <div className="icons user-icon">
-                                <Link to={"/account"}>
+                                <Link to={"/"}>
                                     <FaRegUser />
                                 </Link>
                                 <span className="user-name">Sign In</span>
@@ -68,10 +68,10 @@ export default function Header() {
                 <div className="bottom-header">
                     <div className="nav-bar">
                         <nav>
-                            <NavLink activeClassName="active" to={"/"} className="manu-item" >Home</NavLink>
+                            <NavLink activeclassname="active" to={"/"} className="manu-item" >Home</NavLink>
                             <a className="manu-item">Groceries</a>
                             <a className="manu-item">Home & Kitchen</a>
-                            <NavLink activeClassName="active" to={"/fashionpage"} className="manu-item" >Fashion</NavLink>
+                            <NavLink activeclassname="active" to={"/fashionpage"} className="manu-item" >Fashion</NavLink>
                             <a className="manu-item">Electronics</a>
                             <a className="manu-item">Beauty</a>
                             <a className="manu-item">All Categories</a>

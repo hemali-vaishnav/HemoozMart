@@ -4,13 +4,17 @@ import Home from "../components/home";
 import Cart from "../components/cart";
 import About from "../components/about";
 import Favourite from "../components/favourite";
-import Account from "../components/account";
 import Fashionpage from "../components/fashionpage";
+import Signup from "../components/signup";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <DefaultLayout />,
+        element: localStorage.getItem("isLogin") === "true" ? <DefaultLayout /> : <Signup />
+    },
+    {
+        path: "/",
+        element: localStorage.getItem("isLogin") === "true" ? <DefaultLayout /> : <Signup/>,
         children: [
             {
                 path: "/",
@@ -29,15 +33,12 @@ const router = createBrowserRouter([
                 path: "/favourite",
                 element: <Favourite />
             },
-            {
-                path: "/account",
-                element: <Account />
-            },
+
             {
                 path: "/fashionpage",
                 element: <Fashionpage />
             }
-            
+
 
         ]
     }

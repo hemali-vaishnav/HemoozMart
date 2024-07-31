@@ -211,7 +211,15 @@ export default function Bestsellerofcookingessential() {
         slidesToShow: 6,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 4,
+                },
+            }
+        ]
     };
 
     const cartButtons = document.querySelectorAll('.cart-button');

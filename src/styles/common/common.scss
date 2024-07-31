@@ -20,8 +20,8 @@ body {
 div[class*='kursor'].kursor--1 {
     left: 0px;
     top: 0px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 2px solid rgba(var(--k-color), 1);
     transition: all 0.2s ease, top 0.18s ease-out, left 0.18s ease-out;
@@ -29,8 +29,8 @@ div[class*='kursor'].kursor--1 {
 
 div[class*='kursor'].kursor--1+.kursorChild {
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: rgba(var(--k-color), 1);
     border-radius: 50%;
     transition: all 0.2s ease, top 0s ease-out, left 0s ease-out;

@@ -19,14 +19,12 @@ export default function Favourite() {
   const favcarts = (items) => {
 
     const isProductsInFavs = favItems.some(item => item.id === items.id)
-    if (isProductsInFavs) {
+    if (isProductsInFavs) {  
       dispatch(removeFromFav(items))
     }
     else {
       dispatch(addFavCart(items))
     }
-
-
   }
 
 

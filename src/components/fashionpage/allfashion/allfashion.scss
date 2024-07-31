@@ -1,0 +1,11 @@
+.flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    img{
+        width: 100px;
+    }
+    
+
+}
