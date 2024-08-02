@@ -51,7 +51,7 @@ export default function Header() {
                                 <Link to={"/"}>
                                     <FaRegUser />
                                 </Link>
-                                <span className="user-name">Sign In</span>
+                                {/* <span className="user-name">Sign In</span> */}
                             </div>
                         </div>
                     </div>

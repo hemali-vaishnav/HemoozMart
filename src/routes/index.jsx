@@ -6,15 +6,33 @@ import About from "../components/about";
 import Favourite from "../components/favourite";
 import Fashionpage from "../components/fashionpage";
 import Signup from "../components/signup";
+import AuthRoute from "./authrout";
+import Login from "../components/login";
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: localStorage.getItem("isLogin") === "true" ? <DefaultLayout /> : <Signup />
+        path: '/signup/:id?',
+        element: (
+            <AuthRoute>
+                <Signup />
+            </AuthRoute>
+        ),
+    },
+    {
+        path: '/login',
+        element: (
+            <AuthRoute>
+                <Login />
+            </AuthRoute>
+        ),
     },
     {
         path: "/",
-        element: localStorage.getItem("isLogin") === "true" ? <DefaultLayout /> : <Signup/>,
+        element: (
+            <AuthRoute>
+                <DefaultLayout />
+            </AuthRoute>
+        ),
         children: [
             {
                 path: "/",
