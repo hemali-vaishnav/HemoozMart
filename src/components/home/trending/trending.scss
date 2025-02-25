@@ -1,0 +1,22 @@
+@import '../../../styles/container/container.scss';
+
+.trending-brands {
+    padding: 40px 0;
+
+    .section-heading {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .trending-brand-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .brand-image {
+            width: 200px;
+        }
+    }
+}

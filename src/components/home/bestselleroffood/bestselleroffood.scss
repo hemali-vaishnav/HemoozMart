@@ -1,0 +1,246 @@
+.bestseller-of-food {
+    padding: 20px 0;
+
+    .bestseller-heading {
+        padding: 10px 0 15px 15px;
+        font-size: 18px;
+    }
+
+    .food-bestseller-card{
+
+        .card-slider {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+
+                .nextArrow,
+                .prevArrow {
+                    opacity: 1;
+                    transition: .3s ease-in-out;
+                }
+            }
+
+
+            .card {
+                margin: 0 15px;
+
+                .flex-item {
+                    display: flex;
+                    align-items: start;
+                    gap: 10px;
+
+                    .card-image {
+                        width: 150px;
+                    }
+
+                    
+                }
+
+                .card-content {
+
+                    h4 {
+                        font-size: 14px;
+                        height: 50px;
+                        font-weight: 600;
+                        padding: 10px 0 10px 5px;
+                    }
+
+                    .price {
+                        font-size: 16px;
+                        font-weight: 600;
+                        padding: 10px 0 10px 6px;
+                    }
+
+
+
+
+                    .cart-button {
+                        position: relative;
+                        padding: 10px;
+                        width: 180px;
+                        height: 40px;
+                        border: 1px solid #c1c1c1;
+                        border-radius: 20px;
+                        background-color: #faf9fd;
+                        outline: none;
+                        cursor: pointer;
+                        color: #fff;
+                        transition: .3s ease-in-out;
+                        overflow: hidden;
+
+                        &:hover {
+                            border: 1px solid #576ea1;
+                        }
+
+                        .fa-shopping-cart {
+                            position: absolute;
+                            z-index: 2;
+                            top: 50%;
+                            left: -10%;
+                            font-size: 20px;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        .fa-box {
+                            position: absolute;
+                            z-index: 3;
+                            top: -20%;
+                            left: 52%;
+                            font-size: 16px;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        span {
+                            position: absolute;
+                            z-index: 3;
+                            left: 50%;
+                            top: 50%;
+                            font-size: 13px;
+                            color: #000000;
+                            transform: translate(-50%, -50%);
+
+                            &.added {
+                                opacity: 0;
+                                font-size: 16px;
+                            }
+                        }
+
+                        i {
+                            color: #0f0e0e;
+                        }
+
+                        &.clicked .fa-shopping-cart {
+                            animation: cart 1.5s ease-in-out forwards;
+                        }
+
+                        &.clicked .fa-box {
+                            animation: box 1.5s ease-in-out forwards;
+                        }
+
+                        &.clicked span.add-to-cart {
+                            animation: txt1 1.5s ease-in-out forwards;
+                        }
+
+                        &.clicked span.added {
+                            animation: txt2 1.5s ease-in-out forwards;
+                        }
+
+                        @keyframes cart {
+                            0% {
+                                left: -10%;
+                            }
+
+                            40%,
+                            60% {
+                                left: 50%;
+                            }
+
+                            100% {
+                                left: 110%;
+                            }
+                        }
+
+                        @keyframes box {
+
+                            0%,
+                            40% {
+                                top: -20%;
+                            }
+
+                            60% {
+                                top: 40%;
+                                left: 52%;
+                            }
+
+                            100% {
+                                top: 40%;
+                                left: 112%;
+                            }
+                        }
+
+                        @keyframes txt1 {
+                            0% {
+                                opacity: 1;
+                            }
+
+                            20%,
+                            100% {
+                                opacity: 0;
+                            }
+                        }
+
+                        @keyframes txt2 {
+
+                            0%,
+                            80% {
+                                opacity: 0;
+                            }
+
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nextArrow {
+            position: absolute;
+            top: 40%;
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            opacity: 0;
+            transition: .3s ease-in-out;
+
+
+            &::after {
+                content: '';
+                background-image: url(../../../assets/icons/slider-next-ds2.svg);
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 5px;
+                right: -1200px;
+            }
+        }
+
+        .prevArrow {
+            position: absolute;
+            top: 40%;
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+            background-color: transparent;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            opacity: 0;
+            transition: .3s ease-in-out;
+
+
+            &::after {
+                content: '';
+                background-image: url(../../../assets/icons/slider-next-ds2.svg);
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 5px;
+                left: 0;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+
+}

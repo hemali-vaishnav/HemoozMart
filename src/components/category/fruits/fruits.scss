@@ -1,0 +1,47 @@
+.fruits-category {
+    .fruitsitem-category {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        cursor: pointer;
+        padding-top: 60px;
+
+        .category-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:hover {
+               .category-image {
+                    transform: scale(1.1);
+                    transition: 0.5s ease-in-out;
+                }
+
+                h2 {
+                    color: #28ae02;
+                    transition: 0.4s ease-in-out;
+                    ;
+                }
+            }
+
+            .category-image {
+                width: 130px;
+                height: 130px;
+                border-radius: 80px;
+                transition: 0.5s ease-in-out;
+                overflow: hidden;
+
+
+            }
+
+            h2 {
+                font-family: "Quicksand", sans-serif;
+                font-size: 16px;
+                padding-top: 10px;
+                transition: 0.4s ease-in-out;
+
+
+            }
+        }
+    }
+}

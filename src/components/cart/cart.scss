@@ -1,0 +1,103 @@
+.cart-component {
+    padding: 0 0 0 40px;
+    min-height: 68vh;
+
+    .cart-heading {
+
+        h2 {
+            font-size: 35px;
+            padding: 20px 0;
+        }
+    }
+
+    .cart-item {
+        background-color: #fff;
+        max-width: 700px;
+        padding: 20px 10px;
+        margin: 20px 0 0 0;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        border: 1px solid #c2c2c2;
+        border-radius: 20px;
+
+        .cart-flex {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+
+            .cart-item-image {
+                max-width: 150px;              
+            }
+
+            .cart-item-content {
+                padding: 0 40PX 0 0;
+
+                .item-name {
+                    font-size: 20px;
+                    padding-left: 5px;
+                }
+
+                .description {
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding-left: 5px;
+
+                }
+
+                .price {
+                    font-size: 20px;
+                    padding: 10px 0 0 5px;
+                }
+
+                .update-quantity {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 0 0 0;
+
+                    button {
+                        border-radius: 50px;
+                        background-color: dfdfdf;
+                        border: 1px solid #9f9e9e;
+
+                        &.increase-item {
+                            font-size: 20px;
+                            padding: 4px 10px;
+                        }
+
+                        &.decrease-item {
+                            font-size: 21px;
+                            padding: 3px 12px;
+                        }
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .delete-item {
+            padding: 10px;
+            font-size: 25px;
+            
+        }
+    }
+
+    .empty-cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0;
+
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.topcategory-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+
+    .topcategory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .topcategory-image {
+            width: 180px;
+        }
+
+        h4{
+            padding-left: 10px;
+        }
+    }
+}
